@@ -1,0 +1,40 @@
+mixin tourItem(image, price, title, review, reviewCount, duration, tourPrice)
+    .tour
+        .tour-top
+            img.tour-image(src= image, alt='bali')
+            span.tour-price= price
+        .tour-content
+            h3.tour-title= title 
+            .tour-rating
+                .tour-review
+                    .tour-star
+                        img(src='./images/star.png', alt='tour-star')
+                    .tour-review-count
+                        span= review 
+                            |  (#{reviewCount} reviews)
+                span.tour-duration Duration: #{duration} hours
+            a.tour-button(href='#') Tours Price $#{tourPrice}
+mixin popularItemFlex()
+    .popular-item-flex 
+        .popular-image-flex    
+            .popular-overlay-flex   
+            img(src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dHJhdmVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60", alt="").popular-img-flex
+            span.popular-lable-flex  Must See
+        .popular-content-flex 
+            span.popular-time-flex Sep 28 10:00 AM - 1:00 PM
+            h3.popular-title-flex The Grand Palace
+            .popular-review-flex 
+                img(src='./images/star.svg', alt='tour-star')   
+                span 4.8 (12 reviews) 
+mixin popularItemGrid(pictures)
+    .popular-item-grid
+        .popular-image-grid    
+            .popular-overlay-grid   
+            img(src= pictures, alt="").popular-img-grid
+            span.popular-lable-grid  Must See
+        .popular-content-grid 
+            span.popular-time-grid Sep 28 10:00 AM - 1:00 PM
+            h3.popular-title-grid The Grand Palace
+            .popular-review-grid 
+                img(src='./images/star.svg', alt='tour-star')   
+                span 4.8 (12 reviews) 
