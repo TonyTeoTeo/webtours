@@ -38,10 +38,10 @@ html(lang="en")
                 script.
                     var index1 = 1;
                     changeImage = function(){
-                        var imgs=["https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80","https://images.unsplash.com/photo-1572529593091-6c05c37cacc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80","https://images.unsplash.com/photo-1596879857570-7b6b9018bcb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"];
+                        var imgs=["https://images.unsplash.com/photo-1510379872535-9310dc6fd6a7?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://plus.unsplash.com/premium_photo-1693238778029-567eec3dd881?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1578515756945-678323107515?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1566830646346-908d87490bba?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1520524155947-ca0c3d96ec03?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1578167635648-df79e1565908?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1578167635857-3c2713865774?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","https://images.unsplash.com/photo-1584293938526-76d5ceac45f1?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1618889128235-93807ca6b114?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", "https://images.unsplash.com/photo-1513568720563-6a5b8c6caab3?auto=format&fit=crop&q=80&w=1144&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"];
                         document.getElementById('img-top').src = imgs[index1];
                         index1++;
-                        if(index1==3){
+                        if(index1==10){
                             index1 = 0;
                         }
                     }
@@ -50,20 +50,20 @@ html(lang="en")
                 .container 
                     h2.heading Top Bangkok Tours
                     .tour-list 
-                        +tourItem('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dHJhdmVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60', 'From $40', 'Thailands Ayutthaya Temples Cruise from Bangkok', 4.1, 12, 9, 61)
-                        +tourItem('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dHJhdmVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60', 'From $60', 'FLoating Markets Day Trip from Bangkok', 4.6, 14, 12, 112)
-                        +tourItem('https://images.unsplash.com/photo-1568849676085-51415703900f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60', 'From $70', 'Bangkok Dinner Cruise on the Chao Phraya River', 4.8, 15, 18, 198)
-                        +tourItem('https://images.unsplash.com/photo-1568849676085-51415703900f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60', 'From $70', 'Bangkok Dinner Cruise on the Chao Phraya River', 4.8, 15, 18, 198)
-                        +tourItem('https://images.unsplash.com/photo-1568849676085-51415703900f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60', 'From $70', 'Bangkok Dinner Cruise on the Chao Phraya River', 4.8, 15, 18, 198)
-                        +tourItem('https://images.unsplash.com/photo-1568849676085-51415703900f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60', 'From $70', 'Bangkok Dinner Cruise on the Chao Phraya River', 4.8, 15, 18, 198)
+                        +tourItem('https://images.unsplash.com/photo-1616047493036-0e1d5ab21dab?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'From $40', 'Bangkok Thailand', 4.1, 12, 9, 61)
+                        +tourItem('https://images.unsplash.com/photo-1598970605070-a38a6ccd3a2d?auto=format&fit=crop&q=80&w=1035&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'From $60', 'Bangkok Thailand', 4.6, 14, 12, 112)
+                        +tourItem('https://plus.unsplash.com/premium_photo-1682098240884-9dfc7bf048f0?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'From $70', 'Bangkok Thailand', 4.8, 15, 18, 198)
+                        +tourItem('https://images.unsplash.com/photo-1583491470869-ca0b9fa90216?auto=format&fit=crop&q=80&w=1064&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'From $70', 'Bangkok, Thailand', 4.5, 15, 16, 298)
+                        +tourItem('https://images.unsplash.com/photo-1589932896376-5244c8898269?auto=format&fit=crop&q=80&w=1032&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'From $90', 'Bangkok, Thailand', 4.1, 11, 18, 98)
+                        +tourItem('https://images.unsplash.com/photo-1580327942498-53a877c6d0ce?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'From $80', 'Bangkok, Thailand', 4.8, 13, 14, 108)
             section.popular-flex   
                 .container 
                     h2.heading Popular things to do in Bangkok
                     .popular-list-flex 
-                        +popularItemFlex 
-                        +popularItemFlex
-                        +popularItemFlex
-                        +popularItemFlex 
+                        +popularItemFlex('https://plus.unsplash.com/premium_photo-1682098240884-9dfc7bf048f0?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+                        +popularItemFlex('https://images.unsplash.com/photo-1506781961370-37a89d6b3095?auto=format&fit=crop&q=80&w=1074&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+                        +popularItemFlex('https://plus.unsplash.com/premium_photo-1661766983546-c923002564a5?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+                        +popularItemFlex('https://images.unsplash.com/photo-1564312683505-a6b3168439b7?auto=format&fit=crop&q=80&w=1288&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
             section.popular-grid 
                 .container 
                     h2.heading Popular things to do in Viet Nam
@@ -122,7 +122,7 @@ html(lang="en")
                 .container 
                     h2.heading Hidden gems in Bangkok
                     .diamon-list 
-                        each val in ['https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://plus.unsplash.com/premium_photo-1673283243381-ac2e9b686182?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://plus.unsplash.com/premium_photo-1673283243381-ac2e9b686182?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&q=80&w=1050&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D']
+                        each val in ['https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://plus.unsplash.com/premium_photo-1673283243381-ac2e9b686182?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://images.unsplash.com/photo-1578507126016-337583c6dddb?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&q=80&w=1050&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D']
                             .diamon-item 
                                 .diamon-image 
                                     img(src= val, alt="")
